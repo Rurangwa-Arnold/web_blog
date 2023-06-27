@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="signup-form" action="#" method="POST"><a href="log.python.py">
+      <label for="new-username">New Username:</label>
+      <input type="text" id="new-username" name="new-username" required>
+      <label for="new-username">Email:</label>
+      <input type="text" id="Email" name="Email" required>
+      <label for="new-password">New Password:</label>
+      <input type="password" id="new-password" name="new-password" required>
+      <input type="submit" value="Create Account">
+      </a>
+    </form>
+  </body>
+</html>

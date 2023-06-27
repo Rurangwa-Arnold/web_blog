@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Wise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: cornsilk;
+      }
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: burlywood;
+        padding: 10px;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin-right: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      nav ul li a:hover {
+        color: #666;
+      }
+      .search {
+        display: flex;
+      }
+      .search input[type="text"] {
+        margin-right: 5px;
+      }
+      .main-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .left-column {
+        flex: 3;
+        margin-right: 20px;
+      }
+      .right-column {
+        flex: 1;
+      }
+      .featured-post img {
+        width: 100%;
+      }
+      h3 {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: burlywood;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+      <img src="wise.png" alt="Logo">
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Sports.html">Sports</a></li>
+            <li><a href="Entertainment.html">Entertainment</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <p>
+        <div class="search">
+          <form action="#" method="get">
+            <input type="text"  placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+          <a href="Login_form.html">Login Here</a>
+        </div>
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="left-column">
+          <div class="image-slideshow">
+            <img class="slide" src="lol.jpg" alt="Slide 1">
+            <img class="slide" src="sd.jpg" alt="Slide 2">
+            <img class="slide" src="sf.jpg" alt="Slide 3">
+            <img class="slide" src="we.jpg" alt="slide4">
+            <img class="slide" src="yu.jpg" alt="Slide 5">
+            <img class="slide" src="jio.jpg" alt="Slide 6">
+            <Img class="slide" src="oip.jpg" alt="slide 7">
+              <Img class="slide" src="ty.jpg" alt="slide 8">
+                <Img class="slide" src="re.jpg" alt="slide 9">
+                  <Img class="slide" src="rt.jpg" alt="slide 10">
+          </div>
+          </div>
+          </div>
+           <style>
+          .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+           .left-column {
+            width: 50%;
+          }
+           .featured-post img {
+            width: 50%;
+          }
+           .image-slideshow {
+            position:relative;
+            height: 600px;
+          }
+           .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+          }
+           .slide.active {
+            opacity: 1;
+          }
+           </style>
+           <script>
+          const slides = document.querySelectorAll('.slide');
+          let currentSlide = 0;
+           function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+          }
+           setInterval(nextSlide, 5000);
+          </script>
+            <h2><a href="#">News Feed</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu ultrices tincidunt, arcu sapien bibendum magna, eget tincidunt ligula mi in libero.</p>
+          </div>
+          <div class="latest-posts">
+            <h3>Latest Posts</h3>
+            <p>
+            Study Shows Increased Screen Time During Pandemic Affects Children's Mental Health
+            The COVID-19 pandemic has forced many children to stay indoors and rely on screens for entertainment and education. A
+            recent study published in the Journal of the American Medical Association (JAMA) found that increased screen time during
+            the pandemic has negatively impacted the mental health of children.
+            The study surveyed over 2,000 children aged 8-12 years old and their parents in the United States. It found that
+            children who spent more than seven hours a day on screens had higher rates of anxiety and depression than those who
+            spent less than an hour a day. The study also found that children who spent more time on screens were more likely to
+            have trouble falling asleep and staying asleep.
+            Dr. Jane Smith, a pediatrician and one of the authors of the study, said that the findings highlight the need for
+            parents to monitor their children's screen time and encourage other activities. "Screen time is not inherently bad, but
+            too much of it can have negative effects on children's mental health," she said. "Parents should try to limit their
+            children's screen time and encourage them to engage in other activities like reading, playing outside, or spending time
+            with family."
+            The study also found that children who had more social support from their families and friends had better mental health
+            outcomes. "It's important for parents to stay connected with their children and provide emotional support during these
+            challenging times," said Dr. Smith.
+            The findings of the study underscore the importance of balancing screen time with other activities and providing
+            children with social support. As the pandemic continues, parents should be mindful of their children's mental health and
+            take steps to promote healthy habits.
+
+            </p>
+              <p>
+              Poland has a long and rich history of education, with the first university in the country founded in the 14th century.
+              Today, education in Poland is highly regarded and valued, with a strong emphasis on academic achievement and
+              intellectual development.
+              The Polish education system is divided into three levels: primary, secondary, and tertiary. Primary education is
+              compulsory for all children aged 6-7 to 13-14, and is focused on developing basic skills in reading, writing, and
+              mathematics. Secondary education is divided into two stages: lower secondary and upper secondary. Lower secondary
+              education is compulsory and lasts for three years, while upper secondary education is voluntary and lasts for another
+              three years. Upper secondary education prepares students for higher education or vocational training.
+              Polish universities are highly regarded and attract students from all over the world. The country has a strong tradition
+              of research and academic excellence, with many universities ranking highly in international rankings. The most
+              prestigious universities in Poland include the University of Warsaw, Jagiellonian University in Krakow, and Adam
+              Mickiewicz University in Poznan.
+              The Polish government places a high priority on education, with public spending on education accounting for a
+              significant portion of the national budget. The government also provides financial support for students who come from
+              low-income families, making education accessible to all.
+              Poland's education system has undergone significant changes in recent years, with a focus on modernizing the curriculum
+              and incorporating new technologies into the classroom. The country has also placed a greater emphasis on vocational
+              education, with the aim of providing students with the skills they need to succeed in the modern workforce.
+              Overall, education in Poland is highly valued and respected, with a strong emphasis on academic achievement and
+              intellectual development. The country's universities are world-renowned, and the government is committed to providing
+              access to education for all. With a focus on modernizing the curriculum and incorporating new technologies into the
+              classroom, Poland is well-positioned to continue to provide high-quality education for its students well into the
+              future.
+              </p>
+              <p>
+                The natural environment plays a crucial role in our lives, providing us with the air we breathe, the water we drink, and
+                the food we eat. It is the foundation of our existence, and yet we often take it for granted. The natural environment is
+                under threat from a range of factors, including climate change, pollution, and habitat destruction. In this article, we
+                will explore the importance of the natural environment and the steps we can take to protect it.
+                One of the most pressing issues facing the natural environment is climate change. The burning of fossil fuels is
+                releasing large amounts of carbon dioxide into the atmosphere, causing the planet to warm at an alarming rate. This
+                warming is causing glaciers to melt, sea levels to rise, and weather patterns to become more extreme. The effects of
+                climate change are already being felt around the world, with more frequent and severe heatwaves, droughts, and floods.
+                Another major threat to the natural environment is pollution. The release of chemicals and waste products into the air,
+                water, and soil is harming wildlife, ecosystems, and human health. Plastic pollution is a particular concern, with
+                millions of tonnes of plastic waste entering the oceans every year. This waste is killing marine life and entering the
+                food chain, with potential impacts on human health.
+                Habitat destruction is also a significant threat to the natural environment. The destruction of forests, wetlands, and
+                other ecosystems is causing the loss of biodiversity and the extinction of species. This loss of biodiversity is not
+                only a tragedy in itself, but it also has broader implications for human health and wellbeing.
+                So, what can we do to protect the natural environment? There are many steps we can take, both as individuals and as a
+                society. One of the most important things we can do is reduce our carbon footprint by using renewable energy, driving
+                less, and eating a plant-based diet. We can also reduce our use of single-use plastics, recycle more, and support
+                companies that are committed to sustainability.
+                On a larger scale, governments and businesses have a crucial role to play in protecting the natural environment.
+                Governments can introduce policies to reduce greenhouse gas emissions, protect habitats, and promote sustainable
+                development. Businesses can adopt sustainable practices, such as using renewable energy, reducing waste, and sourcing
+                materials responsibly.
+                In conclusion, the natural environment is essential to our survival and wellbeing. It is under threat from a range of
+                factors, including climate change, pollution, and habitat destruction. However, there are many steps we can take to
+                protect the natural environment, both as individuals and as a society. By working together, we can ensure that future
+                generations can enjoy the same benefits from the natural environment that we do today.
+              </p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="popular-posts">
+            <h3>Popular Channels</h3>
+            <ul>
+              <li><a href="https://www.bbc.com/news">BBC News</a></li>
+              <li><a href="https://www.skysports.com/football">Sports News</a></li>
+              <li><a href="https://eu.usatoday.com/entertainment/">Entertainment News</a></li>
+              <li><a href="https://edition.cnn.com/weather">weather</a></li>
+              <li><a href="https://abcnews.go.com/International">International News</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="left-column">
+          <p>&copy; 2021 Blog Wise. Created by Group 2 Arnold Rurangwa, Emma-Vassily Rukatsa, Simon Panashe-Chikono.</p>
+        </div>
+        <div class="right-column">
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
